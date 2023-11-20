@@ -1,0 +1,113 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css"
+    integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html> -->
+
+
+<mat-toolbar>
+  Facebook
+</mat-toolbar>
+
+
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+    <img class="rounded-circle  mat-elevation-z8" height="100" width="100"
+      src="https://avatars.githubusercontent.com/u/132428949?s=400&u=3db90334688bbee2b0d8d0f7fbbcde5a25dfaed2&v=4"
+      alt="#">
+    <h2 class="name">Robiul Islam</h2>
+    <h5 class="designation">JEE Expert</h5>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </button>
+
+    <button mat-button class="menu-button">
+      <mat-icon>info</mat-icon>
+      <span>About</span>
+    </button>
+
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+      Main Content
+    </div>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+<router-outlet></router-outlet>

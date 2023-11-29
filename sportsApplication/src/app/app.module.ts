@@ -9,24 +9,58 @@ import { ProductRepository } from './model/product.repository';
 import { provideHttpClient } from '@angular/common/http';
 import { StoreModule } from "./store/store.module";
 
+
+import { CheckoutComponent } from "./store/checkout.component";
+import { CartDetailComponent } from "./store/cartDetail.component";
+import { RouterModule } from "@angular/router";
+
+import { StoreFirstGuard } from "./storeFirst.guard";
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    
-    
-    
+
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule,
-    
-  ],
-  providers: [
+
+    // RouterModule.forRoot([
+    //   { path: "store", component: StoreComponent },
+    //   { path: "cart", component: CartDetailComponent },
+    //   { path: "checkout", component: CheckoutComponent },
+    //   { path: "**", redirectTo: "/store" }
+    //   ])    
+
+    RouterModule.forRoot([
+      {
+        path: "store", component: StoreComponent,
+        canActivate: [StoreFirstGuard]
+      },
+      {
+        path: "cart", component: CartDetailComponent,
+        canActivate: [StoreFirstGuard]
+      },
+      {
+        path: "checkout", component: CheckoutComponent,
+        canActivate: [StoreFirstGuard]
+      },
+      { path: "**", redirectTo: "/store" }
+      
+    ])],
+
+
+  providers: [    
     provideHttpClient(),
     StaticDataSource,
-    ProductRepository
+    ProductRepository,
+    StoreFirstGuard,
   ],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

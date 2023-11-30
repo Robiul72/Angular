@@ -3,6 +3,8 @@
 
 import { Injectable } from "@angular/core";
 import { Cart } from "./cart.model";
+
+
 @Injectable()
 export class Order {
     public id?: number;
@@ -13,7 +15,9 @@ export class Order {
     public zip?: string;
     public country?: string;
     public shipped: boolean = false;
+
     constructor(public cart: Cart) { }
+    
     clear() {
         this.id = undefined;
         this.name = this.address = this.city = undefined;

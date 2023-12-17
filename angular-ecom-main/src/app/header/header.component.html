@@ -1,0 +1,47 @@
+<nav class="nav">
+   <!-- <img src="https://st2.depositphotos.com/1005893/7364/i/450/depositphotos_73644849-stock-photo-the-colorful-words-happy-birthday.jpg" alt="">  -->
+    <img src="../../assets/image/birthday-removebg-preview.png"/>
+
+  <div *ngIf="menuType!=='seller'" class="nav-search">
+    <input type="text"
+    #searchInput
+    (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search Products" />
+
+    <button (click)="submitSearch(searchInput.value)" >Search</button>
+    
+    <ul class="suggested-search" *ngIf="searchResult">
+      <li *ngFor="let item of searchResult">
+        <a (mousedown)="redirectToDetails(item.id)" >{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
+
+
+ <div [ngSwitch]="menuType">
+  <ul *ngSwitchCase="'default'" >
+    <li><a class="menu" routerLink="seller-auth">Seller</a></li>
+    <li><a class="menu" routerLink="">Home</a></li>
+    <li><a class="menu" routerLink="user-auth">Login/Sign-up</a></li>
+    <li><a class="menu" href="#">Cart({{cartItems}})</a></li>
+  </ul>
+
+  <ul *ngSwitchCase="'user'" >
+    
+    <li><a class="menu" routerLink="">Home</a></li>
+    <li><a class="menu" routerLink="seller-auth">Seller</a></li>
+   
+    <li><a class="menu" routerLink="my-orders" >My Orders</a></li>
+    <li><a class="menu" (click)="userLogout()" >Logout</a></li>
+
+    <li><a class="menu" [routerLink]="cartItems>0?'cart-page':null">Cart({{cartItems}})</a></li>
+    <li><a class="menu">{{userName | titlecase}}</a></li>
+  </ul>
+
+  <ul *ngSwitchCase="'seller'" >
+    <li><a class="menu" routerLink="seller-add-product">Add Product</a></li>
+    <li><a class="menu" routerLink="seller-home">List</a></li>
+    <li><a class="menu" (click)="logout()">Logout</a></li>
+    <li><a class="menu" href="#">{{sellerName | titlecase}}</a></li>
+  </ul>
+ </div>
+</nav>

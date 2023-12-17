@@ -1,0 +1,202 @@
+{
+  "seller": [
+    {
+      "name": "sam sidhu",
+      "email": "sam@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "peter",
+      "password": "abc@123",
+      "email": "peter@test.com",
+      "id": 3
+    },
+    {
+      "name": "bruce",
+      "password": "abc@123",
+      "email": "bruce@test.com",
+      "id": 4
+    },
+    {
+      "name": "anil",
+      "password": "abc123",
+      "email": "anil@test.com",
+      "id": 5
+    },
+    {
+      "name": "alena",
+      "password": "abc123",
+      "email": "alena@test.com",
+      "id": 6
+    },
+    {
+      "name": "sam",
+      "password": "abc@123",
+      "email": "sam@test.com",
+      "id": 7
+    },
+    {
+      "name": "bhasker",
+      "password": "abc@123",
+      "email": "bhasker@test.com",
+      "id": 8
+    },
+    {
+      "name": "Robiul Islam",
+      "password": "1230",
+      "email": "robiulislam366972@gmail.com",
+      "id": 9
+    }
+  ],
+  "products": [
+    {
+      "name": "Birthday Cake",
+      "price": "200",
+      "category": "Food",
+      "color": "white",
+      "description": "this is a nice product",
+      "image": "https://as1.ftcdn.net/v2/jpg/01/87/91/30/1000_F_187913081_y8GVwfPUgPfMelocnv1vK95xLWHhzjuo.jpg",
+      "id": 1
+    },
+    {
+      "name": "Celebration birthday cake with lots of",
+      "price": "2000",
+      "category": "Cake",
+      "color": "black",
+      "description": "Celebration birthday cake with lots ",
+      "image": "https://as1.ftcdn.net/v2/jpg/05/58/14/66/1000_F_558146635_Pjgj1F8Au64JTeB9VGuas0Fm09OhEOGh.jpg",
+      "id": 3
+    },
+    {
+      "name": "happy birthday",
+      "price": "3000",
+      "category": "Food",
+      "color": "Black",
+      "description": "Colorful happy birthday cupcakes\nBy Ruth Black",
+      "image": "https://as2.ftcdn.net/v2/jpg/02/69/19/65/1000_F_269196580_cFrcA6J9ze2vCTrvBSc7ZT9WVLsutupM.jpg",
+      "id": 4
+    },
+    {
+      "name": "white birthday cake with candles",
+      "price": "1000",
+      "category": "Food",
+      "color": "white and chocolate",
+      "description": " birthday party for children, children having fun, colorful cake, rainbow",
+      "image": "https://as2.ftcdn.net/v2/jpg/06/27/74/85/1000_F_627748555_chmbJ8lbC9VTDuwR5TpEnYkI3adyKgwh.jpg",
+      "id": 5
+    },
+    {
+      "name": "White birthday cake with candles",
+      "price": "800",
+      "category": "Food",
+      "color": "White",
+      "description": "Popular Birthday And Greeting Card Write--",
+      "image": "https://img.freepik.com/free-photo/delicious-cake-candles-arrangement_23-2149023576.jpg",
+      "id": 7
+    },
+    {
+      "name": "Birthday Cake",
+      "price": "1500",
+      "category": "Food",
+      "color": "White",
+      "description": "10 Best Cake Delivery Services of 2023\nImages may be subject to copyright. Learn More",
+      "image": "https://www.foodandwine.com/thmb/BFYf-RGp9AiTlbdvzMNtrQM4Kt8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Primary-Image-best-cake-delivery-services-of-2023-7111004-b2424799e6ee4ed5aff8ffb09b5588e6.jpg",
+      "id": 8
+    },
+    {
+      "name": "Cake Plaza",
+      "price": "2000",
+      "category": "Food",
+      "color": "Blue, Black and Coffee",
+      "description": "Top 10 Best Cake Flavours and Ideas in Gurgaon - Cake Plaza\nImages may be subject to copyright. Learn More",
+      "image": "https://cdn.shopify.com/s/files/1/0018/9340/0623/files/Rich-and-dark-chocolate-cake.jpg?v=1667209312",
+      "id": 9
+    },
+    {
+      "name": "Strawberry gateau",
+      "price": "1200",
+      "category": "Food",
+      "color": "White",
+      "description": "Light yet indulgent, this pretty-in-pink French gateau is a perfect summer dessert or mother's day ...",
+      "image": "https://realfood.tesco.com/media/images/130510-HERO-4233405e-f0c7-4336-a1fd-1901bab6f629-0-472x310.jpg",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@user.com",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "peter",
+      "email": "peter@user.com",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "hyden",
+      "email": "hyden@user.com",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "tony",
+      "email": "tony@user.com",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "robiul",
+      "email": "robiulislam366972@gmail.com",
+      "password": "1234",
+      "id": 5
+    }
+  ],
+  "cart": [
+    {
+      "name": "Samsung m 40 a ",
+      "price": "550",
+      "category": "mobile",
+      "color": "white",
+      "description": "this is a Samsung product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": 1,
+      "userId": 3,
+      "id": 7
+    },
+    {
+      "name": "Levies Jeans",
+      "price": "5000",
+      "category": "Jeans",
+      "color": "blue",
+      "description": "Confirmable jeans for man ",
+      "image": "https://www.filmibeat.com/wimg/desktop/2012/12/13548612746596.jpg",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 3,
+      "id": 8
+    }
+  ],
+  "orders": [
+    {
+      "email": "anil@user.com",
+      "address": "noida sector x",
+      "contact": "9999",
+      "totalPrice": 104750,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "email": "anil@test.com",
+      "address": "noida sector x",
+      "contact": "8877",
+      "totalPrice": 6100,
+      "userId": 1,
+      "id": 3
+    }
+  ]
+}

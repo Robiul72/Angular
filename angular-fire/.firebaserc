@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-fire-ddc27": {
+      "hosting": {
+        "angular-fire": [
+          "angular-fire-ddc27"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-fire-ddc27"
+  }
+}

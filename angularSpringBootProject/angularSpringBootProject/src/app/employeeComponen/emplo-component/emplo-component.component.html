@@ -1,0 +1,100 @@
+
+
+
+<nav class="navbar navbar-light bg-primary p-2">
+    <h4 class="text-light">Owner Test</h4>
+    <div class="d-flex">
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-toggle="modal" data-bs-target="#exampleModal">Employee Adds</button>
+    </div>
+</nav>
+
+
+<div class="container mt-3">
+
+    <table class="table table-striped text-center" >
+        <thead >
+            <tr style="background-color: aquamarine;">
+                <th>ID</th>
+                <th>Ownr NID</th>                
+                <th>Owner Name</th>
+                <th>Agreement Date</th>
+                <th>Email No</th>                
+                <th>Mobile No</th>                
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let row of ownerData">
+                <td>{{row.id}}</td>
+                <td>{{row.h_Rent_NID}}</td>                
+                <td>{{row.h_Rent_Owner_Name}}</td>
+                <td>{{row.h_Rent_Date}}</td>
+                <td>{{row.h_Rent_Email}}</td>
+                <td>{{row.h_Rent_Mobile}}</td>
+                <td>
+                    <button class="btn bg-warning mx-2" (click)="onEdit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                    <button class="btn bg-danger mx-2" (click)="deleteOwner(row)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: aquamarine;">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Owner Add Form</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label class="form-label">Owner NID</label>
+                        <input type="text" class="form-control" formControlName="ownerNID">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Owner Name :</label>                                                              
+                        <input type="text" class="form-control" formControlName="ownerName">  
+                    </div>                               
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Agreement Date</label><br>
+                        <input type="text" class="form-control" formControlName="AgreementDate">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email No</label><br>
+                        <input type="text" class="form-control" formControlName="email">
+                        <!-- Add other hobby checkboxes as needed -->
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mobile No</label><br>
+                        <input type="text" class="form-control" formControlName="mobileNo">
+                        <!-- Add other hobby checkboxes as needed -->
+                    </div>
+                 
+             
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success" (click)="saveOwner()">Save</button>
+                <button type="button" class="btn btn-primary" (click)="editOwner()">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
